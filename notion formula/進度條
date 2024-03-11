@@ -1,0 +1,8 @@
+substring("▲▲▲▲▲▲▲▲▲▲", 0, floor(prop("完成度")/10))
++ substring("△△△△△△△△△△" , floor(prop("完成度")/10), 10)
++ "    "
++ if(
+		empty(prop("完成度")),
+		"0%",
+		format(prop("完成度")) + "%"
+    )
